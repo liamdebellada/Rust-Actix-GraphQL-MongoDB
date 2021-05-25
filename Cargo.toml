@@ -1,0 +1,15 @@
+[package]
+name = "needles"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3"
+async-graphql-actix-web = "2.0"
+async-graphql="2.0"
+mongodb = { version = "2.0.0-beta", features = ["async-std-runtime"], default-features = false }
+serde = { version = "1.0", features = ["derive"] }
+futures = "0.3"
+tokio = { version = "1.5.0", features = ["full"] }
